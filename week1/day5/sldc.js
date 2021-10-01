@@ -17,11 +17,11 @@
 /*
     Create a variable for each of the above steps of the Software Development Lifecycle and set the values of each variable to a definition of the step.
 */
-step1 = `Planning`
-step2 = `Analysis`
-step3 = `Design`
-step4 = `Implementation`
-step5 = `Testing & Intergration`
-step6 = `Maintain`
+let step1 = `Planning`
+let step2 = `Analysis`
+let step3 = `Design`
+let step4 = `Implementation`
+let step5 = `Testing & Intergration`
+let step6 = `Maintain`
 
 console.log(step1, step2, step3, step4, step5, step6)

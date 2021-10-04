@@ -5,8 +5,11 @@
 */
 
 //CODE HERE
+function helloWorld(text) {
+  // console.log(text)
+}
 
-
+helloWorld(`Hello, World!`)
 ////////////////// PROBLEM 2 ////////////////////
 /*
   Create a function called printName which takes in a person's name and console logs it.
@@ -15,8 +18,11 @@
 */
 
 //CODE HERE
+function printName(name) {
+  // console.log(name)
+}
 
-
+printName(`Cameron`)
 ////////////////// PROBLEM 3 ////////////////////
 /*
   Create a function called greeting that
@@ -29,8 +35,12 @@
 */
 
 //CODE HERE
+function greeting(name) {
+  nameStr = String(name)
+  // console.log(`Hello,` , nameStr)
+}
 
-
+greeting(`Jake`)
 ////////////////// PROBLEM 4 ////////////////////
 /*
   Create a function called add that takes in two parameters 
@@ -40,8 +50,17 @@
 */
 
 //CODE HERE
+function add(num1 , num2) {
+  let trueNum1 = parseInt(num1)
+  let trueNum2 = parseInt(num2)
+  if (trueNum1 === undefined || trueNum2 === undefined) {
+    console.log(`No numbers present`)
+  } else {
+    console.log(trueNum1 + trueNum2)
+  }
+}
 
-
+add(5 , 2)
 ////////////////// PROBLEM 5 ////////////////////
 /*
   Write a function called nameCheck that takes in a name parameter.

@@ -39,6 +39,7 @@ console.log(middleNums)
 // CODE HERE
 function bigOrSmall(arr) {
   let answers = [];
+
   for (let i = 0; i < bigOrSmall.length; i++) {
     if (i <= 100) {
       answers.push(i = `small`)
@@ -48,5 +49,6 @@ function bigOrSmall(arr) {
   }
   console.log(answers)
 }
+let arrInput = 
 
 bigOrSmall([120])

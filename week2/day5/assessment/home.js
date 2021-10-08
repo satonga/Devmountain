@@ -125,12 +125,9 @@ const deals = [
 */
 
 //CODE HERE
-const changeObject = (object, change) => {
-    let changEnact = object.replace(object.title, change)
-    return changEnact
-}
+deals[0].title = deals[0].title.replace(`15%`, `10%` )
 
-changeObject(deals, `10% Off!`)
+console.log(deals)
 /*
     The restaurant is going to continue its
     family deal for another month. 
@@ -145,3 +142,6 @@ changeObject(deals, `10% Off!`)
 */
 
 //CODE HERE
+deals[1].desc = deals[1].desc.replace(`March`, `April` )
+
+console.log(deals)

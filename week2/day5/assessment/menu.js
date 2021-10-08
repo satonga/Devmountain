@@ -50,7 +50,7 @@ let pizza = {
 */
 
 //CODE HERE
-console.log(pizza.popularity)
+// console.log(pizza.popularity)
 
 /*
     Second, log the second tag in your pizza's
@@ -60,7 +60,7 @@ console.log(pizza.popularity)
 */
 
 //CODE HERE
-console.log(pizza.tags[1])
+// console.log(pizza.tags[1])
 
 /*
     Third, destructure the price off of the
@@ -70,9 +70,8 @@ console.log(pizza.tags[1])
 */
 
 //CODE HERE
-delete pizza.price
-pizza.price = 6
-console.log(pizza.price)
+const {price} = pizza
+// console.log(price)
 
 /*
     Fourth, and last, destructure the category
@@ -82,9 +81,9 @@ console.log(pizza.price)
 */
 
 //CODE HERE
-delete pizza.category
-pizza.category = `appetizer`
-console.log(pizza.category)
+const { category } = pizza
+// console.log(category)
+// console.log(pizza.category)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -121,17 +120,9 @@ let foodArr = [
 */
 
 //CODE HERE
-const tagSearch = (arr, category, tag, cb) => {
-    let filtered = arr.filter(function(ele){
-        cb(arr.name[ele])
-    })
-}
+const filteredFood = foodArr.filter(item => item.tags.includes(`burgers`))
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
-const filteredFodd = tagSearch(foodArr, "tags", "burgers", answer => {
-    console.log(answer)
-})
-
-
+// console.log(filteredFood)
 //////////////////PROBLEM 5////////////////////
 /* 
     Now let's write a function that's a little
@@ -172,7 +163,16 @@ const filteredFodd = tagSearch(foodArr, "tags", "burgers", answer => {
 */
 
 //CODE HERE
-
+const filterByProperty = (property,number,type) => {
+    let results = foodArr.filter(item =>{
+        if(type === `above`){
+            return item[property] > number
+        } else if(type === `below`){
+            return item[property] < number
+        }
+    })
+    return results
+}
 
 /*
     Invoke the `filterByProperty` function passing
@@ -182,3 +182,4 @@ const filteredFodd = tagSearch(foodArr, "tags", "burgers", answer => {
 */
 
 //CODE HERE
+console.log(filterByProperty(`rating`, 8, `below`))

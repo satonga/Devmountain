@@ -1,0 +1,62 @@
+
+
+#grayHeader {
+    width: auto;
+    height: 100px;
+    background-color: gray;
+    margin-trim: 0px;
+}
+
+#blueSquare {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(87, 181, 240);
+    position: relative;
+    top: -90px;
+    left: 15px;
+}
+
+#text {
+    padding-top: 0;
+    padding-bottom: 85px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+#blueRec {
+    width: auto;
+    height: 175px;
+    background-color: rgb(87, 181, 240);
+}
+
+#tealRec {
+    width: auto;
+    height: 175px;
+    background-color: turquoise;
+}
+
+#oliveRec {
+    width: auto;
+    height: 175px;
+    background-color: rgb(208, 208, 144);
+}
+
+#yellowRec {
+    width: auto;
+    height: 175px;
+    background-color: rgb(250, 250, 141);
+}
+
+#sticky {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    position: sticky;
+    right: 100%;
+    bottom: 0px;
+}

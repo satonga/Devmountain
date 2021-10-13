@@ -1,0 +1,72 @@
+#solidborder {
+    width: 700px;
+    height: 150px;
+    border-style: solid;
+    border-width: 4px;
+}
+
+#purpleRec {
+    width: 30px;
+    height: 95px;
+    background-color: rgb(116, 31, 185);
+    position: relative;
+    left: 15px;
+    top: -110px;
+}
+
+#greenRec {
+    background-color: green;
+    width: 250px;
+    height: 130px;
+    position: relative;
+    left: 90px;
+    top: -240px;
+}
+
+#blueCircle {
+    background-color: lightskyblue;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: relative;
+    left: 375px;
+    top: -375px;
+}
+
+#dottedBorder {
+    width: 700px;
+    height: 200px;
+    border-style: dotted;
+    border-width: 4px;
+    position: relative;
+    top: -340px;
+}
+
+#tanRec {
+    width: 650px;
+    height: 150px;
+    background-color: rgb(243, 234, 189);
+    box-shadow: 6px 6px 6px black;
+    position: relative;
+    top: -520px;
+    left: 25px;
+}
+
+
+
+#helloFriends {
+    width: 350px;
+    height: 150px;
+    color: rgb(7, 7, 156);
+    font-size: 25px;
+    padding-top: 75px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 6px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 2px 2px 2px rgb(145, 144, 144);
+    position: relative;
+    top: -460px;
+    left: 175px;
+}

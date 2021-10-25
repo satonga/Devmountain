@@ -36,7 +36,35 @@ app.get("/api/fortune", (req, res) => {
     res.status(200).send(randomFortune)
   })
 
-  app.post
 
+app.get("/api/encouraged/:id", (req, res) => {
+  if (req.params.id === "yes") {
+    const encourgements = [
+      "You're great."
+    ]
+  
+    let randIndex = Math.floor(Math.random() * encourgements.length)
+    let randEncourge = encourgements[randIndex]
+  
+    res.status(200).send(randEncourge)  
+  } else{
+    const encourgements = [
+      "You suck.", 
+      "Try again."
+    ]
+    let randIndex = Math.floor(Math.random() * encourgements.length)
+    let randEncourge = encourgements[randIndex]
+
+    res.status(200).send(randEncourge)
+  }
+ 
+})
+
+app.post("/api/aggressive", (req, res) => {
+
+  const text = req.body.text
+
+  res.status(200).send(text.toUpperCase())
+})
     
 app.listen(4000, () => console.log("Server running on 4000"));
